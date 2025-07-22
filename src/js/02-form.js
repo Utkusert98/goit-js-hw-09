@@ -5,12 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailInput = document.querySelector('input[name="email"]');
   const messageInput = document.querySelector('textarea[name="message"]');
 
-  if (!feedbackForm || !emailInput || !messageInput) {
-    console.error('Form veya inputlar bulunamadı!');
-    return;
-  }
+  if (!feedbackForm || !emailInput || !messageInput) return;
 
-  // Sayfa yüklendiğinde localStorage'dan verileri yükle
+  // 1. Sayfa yüklendiğinde localStorage'dan verileri yükle
   const savedState = localStorage.getItem(STATE_NAME);
   if (savedState) {
     const parsedState = JSON.parse(savedState);
@@ -18,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     messageInput.value = parsedState.message || '';
   }
 
-  // Input değişikliklerinde localStorage'ı güncelle
+  // 2. Input değişikliklerinde localStorage'ı güncelle
   const saveState = () => {
     const currentState = {
       email: emailInput.value,
@@ -30,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   emailInput.addEventListener('input', saveState);
   messageInput.addEventListener('input', saveState);
 
-  // Form submit işlemi
+  // 3. Form submit işlemi
   feedbackForm.addEventListener('submit', event => {
     event.preventDefault();
 
