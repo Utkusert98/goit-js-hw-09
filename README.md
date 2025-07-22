@@ -6,7 +6,7 @@ Bu proje Vite kullanılarak oluşturulmuştur. Ek özelliklerin tanınması ve �
 
 Projeniz için bir depo oluşturmak üzere bu GoIT deposunu şablon olarak kullanın. Bunu yapmak için, `«Use this template»` düğmesine tıklayın ve resimde gösterildiği gibi `«Create a new repository»` seçeneğini seçin.
 
-![Creating repo from a template steap 1](./assets/template-step-1.png)
+![Creating repo from a template step 1](./assets/template-step-1.png)
 
 Bir sonraki adımda yeni bir depo oluşturma sayfası açılır. Ad alanını doldurun, deponun herkese açık olduğundan emin olun ve ardından `«Create repository from template»` düğmesine tıklayın.
 
